@@ -5,12 +5,12 @@
 ---
 
 ## 📂 專案結構
-sing-box-vless-reality/
-├── README.md
-├── config.json-org
-├── gen-vless.sh
-├── show-vless.sh
-└── .gitignore
+	sing-box-vless-reality/
+	├── README.md
+	├── config.json-org
+	├── gen-vless.sh
+	├── show-vless.sh
+	└── .gitignore
 
 ---
 
