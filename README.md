@@ -36,6 +36,7 @@ sing-box-vless-reality/
 
 	# 啟動服務
 	uci set sing-box.main.enabled=1
+	uci set sing-box.main.user=root
 	uci commit sing-box
 	/etc/init.d/sing-box enable
 	/etc/init.d/sing-box restart
