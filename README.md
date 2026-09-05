@@ -26,19 +26,21 @@ sing-box-vless-reality/
 ---
 
 ## ⚙️ 安裝需求
-請先安裝必要套件： `jq`、`qrencode`
+請先安裝必要套件： `sing-box`、`jq`、`qrencode`
 + OpenWRT
 	```sh
-	opkg install jq qrencode
-		or
-	apk add jq qrencode
-	```
-+	或在 Linux 系統使用：
-	```sh
-	apt install jq qrencode -y
-	```
+	# 安裝套件
+	opkg install sing-box jq qrencode
+	# 或
+	apk add sing-box jq qrencode
 
----
+	# 啟動服務
+	uci set sing-box.main.enabled=1
+	uci commit sing-box
+	/etc/init.d/sing-box enable
+	/etc/init.d/sing-box restart
+
+	```
 
 ## 🚀 使用方式
 1. 複製範本
